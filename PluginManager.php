@@ -43,7 +43,7 @@ class PluginManager extends AbstractPluginManager
 
         if (!$payment) {
             $payment = new Payment();
-            $payment->setMethod('Komoju決済');
+            $payment->setMethod('KOMOJU決済');
             $payment->setMethodClass(KomojuCreditCard::class);
             $payment->setVisible(true);
             $payment->setCharge(0);
